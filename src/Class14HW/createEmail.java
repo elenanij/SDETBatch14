@@ -7,7 +7,7 @@ public class createEmail {
 */
     String emailGen (String firstName, String lastName, String type) {
 
-        String email = firstName.toLowerCase().concat(lastName.toLowerCase()).concat("@").concat(type.toLowerCase()).concat(".com");
+        String email = firstName.concat(lastName +"@" +".com").toLowerCase();
 
         return email;
     }

@@ -9,28 +9,27 @@ public class hello {
             case "Burkina Faso":
                 System.out.println("Bonjour");
                 break;
-
             case "Egypt":
                 System.out.println("مرحبًا");
                 break;
-
             case "Belarus":
                 System.out.println("Прывітанне");
                 break;
-
             case "Greece":
                 System.out.println("γεια σας");
                 break;
-
             default:
                 System.out.println("No such country found");
+                break;
         }
     }
 
     public static void main(String[] args) {
+
         hello obj = new hello();
         String country = null;
         obj.language(country);
+
 
     }
 }

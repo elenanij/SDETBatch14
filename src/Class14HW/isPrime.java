@@ -5,7 +5,7 @@ public class isPrime {
     void prime(int num) {
 
         boolean isPr = true;
-        if (num == 0 || num == 10) {
+        if (num == 0 || num == 1) {
             System.out.println(num + " is not a prime number");
         }
 
