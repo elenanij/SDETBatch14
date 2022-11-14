@@ -14,49 +14,44 @@ package GroupProject2;
 public abstract class Marks {
 
     abstract int getPercentage();
+    int subj1;
+    int subj2;
+    int subj3;
 
+    public Marks(int subj1, int subj2, int subj3) {
+        this.subj1 = subj1;
+        this.subj2 = subj2;
+        this.subj3 = subj3;
+    }
 }
 
 class A extends Marks {
+
+    A(int subj1, int subj2, int subj3) {
+
+        super(subj1, subj2, subj3);
+    }
+
     @Override
     int getPercentage() {
 
         return (subj1 + subj2 + subj3) / 3;
     }
-
-    int subj1;
-    int subj2;
-    int subj3;
-
-    A(int subj1, int subj2, int subj3) {
-
-        this.subj1 = subj1;
-        this.subj2 = subj2;
-        this.subj3 = subj3;
-
-    }
 }
 
 class B extends Marks {
 
-    int subj1;
-    int subj2;
-    int subj3;
     int subj4;
-
-    @Override
-    int getPercentage() {
-        return (subj1 + subj2 + subj3 + subj4) / 4;
-    }
 
     B(int subj1, int subj2, int subj3, int subj4) {
 
+        super(subj1, subj2, subj3);
 
-        this.subj1 = subj1;
-        this.subj2 = subj2;
-        this.subj3 = subj3;
         this.subj4 = subj4;
-
+    }
+    @Override
+    int getPercentage() {
+        return (subj1 + subj2 + subj3 + subj4) / 4;
     }
 
 }
