@@ -26,4 +26,6 @@ public class HW7 {
 
         System.out.println(sum);
     }
+
+
 }
